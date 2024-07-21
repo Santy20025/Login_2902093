@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">login_2902093</string>
     <string name="hello">Hey There,</string>
+    <string name="create_account">Create an Account</string>
 </resources>
