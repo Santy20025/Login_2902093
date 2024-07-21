@@ -1,6 +1,7 @@
 package co.edu.sena.soy.login_2902093.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
@@ -11,6 +12,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.edu.sena.soy.login_2902093.R
+import co.edu.sena.soy.login_2902093.components.HeadingTextComponent
 import co.edu.sena.soy.login_2902093.components.NormalTextComponent
 
 
@@ -25,7 +27,11 @@ fun SingUpScreen() {
         ,
         color = Color.White
     ) {
-        NormalTextComponent(value = stringResource(id = R.string.hello))
+        Column(modifier = Modifier.fillMaxSize()) {
+            NormalTextComponent(value = stringResource(id = R.string.hello))
+            HeadingTextComponent(value = stringResource(id = R.string.create_account))
+        }
+
     }
 
 
